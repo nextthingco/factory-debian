@@ -8,6 +8,14 @@ LB_CHROOT_FILESYSTEM="squashfs"
 # (Default: aufs)
 LB_UNION_FILESYSTEM="aufs"
 
+# $LB_EXPOSED_ROOT: expose root as read only
+# (Default: false)
+LB_EXPOSED_ROOT="false"
+
+# $LB_HOOKS: set hook commands
+# (Default: empty)
+LB_HOOKS=""
+
 # $LB_INTERACTIVE: set interactive build
 # (Default: false)
 LB_INTERACTIVE="false"
@@ -28,9 +36,9 @@ LB_LINUX_PACKAGES="linux-image"
 # (Default: true)
 LB_SECURITY="true"
 
-# $LB_UPDATES: enable updates updates
+# $LB_VOLATILE: enable volatile updates
 # (Default: true)
-LB_UPDATES="true"
+LB_VOLATILE="true"
 
 # $LB_BACKPORTS: enable backports updates
 # (Default: false)
