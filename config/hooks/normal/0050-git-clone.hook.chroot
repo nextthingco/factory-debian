@@ -12,7 +12,7 @@ ${PIP} install pyserial || error "could not install pyserial"
 
 mkdir -p /etc/skel/Desktop
 
-git clone --branch=production https://github.com/NextThingCo/CHIP-flasher \
+git clone https://github.com/NextThingCo/CHIP-flasher \
 	/etc/skel/Desktop/CHIP-flasher
 
 git clone --branch=chip/next https://github.com/NextThingCo/CHIP-tools \
