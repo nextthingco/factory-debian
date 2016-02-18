@@ -89,7 +89,7 @@ rm /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip
 sed -s -i 's/#autologin-user=/autologin-user=debian/' /etc/lightdm/lightdm.conf
 sed -s -i 's/#autologin-user-timeout=0/autologin-user-timeout=0/' /etc/lightdm.conf
 
-sed -s -i 's/DISPLAY=:0 sudo kivy/DISPLAY=:0 kivy/' /etc/skel/Desktop/CHIP-flasher/startFlash.sh
+sed -s -i 's/DISPLAY=:0 sudo kivy/DISPLAY=:0 kivy/' /etc/skel/Desktop/CHIP-flasher/startFlasher.sh
 sed -s -i 's/DISPLAY=:0 sudo kivy/DISPLAY=:0 kivy/' /etc/skel/Desktop/CHIP-flasher/startHardwareTest.sh
 
 
