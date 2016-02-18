@@ -22,6 +22,8 @@ cu
 u-boot-tools
 android-tools-fastboot
 android-tools-fsutils
+
+
 python-dev
 python-pip
 libusb-1.0-0-dev
@@ -33,11 +35,14 @@ python-opengl
 python-gst-1.0
 python-enchant
 libgles2-mesa-dev
-
 libsdl2-dev
 libsdl2-image-dev
 libsdl2-mixer-dev
 libsdl2-ttf-dev
 gir1.2-gstreamer-1.0
 fonts-droid-fallback
+sqlitebrowser
+python-kivy
+
+
 dialog

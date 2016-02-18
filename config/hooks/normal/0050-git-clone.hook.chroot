@@ -3,7 +3,7 @@
 set -x
 
 PIP=`which pip`
-${PIP} install --upgrade Cython==0.21 || error "could not install cython!"
+#${PIP} install --upgrade Cython==0.21 || error "could not install cython!"
 ${PIP} install kivy || error "could not install kivy"
 sudo ln -s /usr/bin/python2.7 /usr/local/bin/kivy
 ${PIP} install libusb1 || error "could not install libusb1"
@@ -12,7 +12,7 @@ ${PIP} install pyserial || error "could not install pyserial"
 
 mkdir -p /etc/skel/Desktop
 
-git clone --branch=production https://github.com/NextThingCo/CHIP-flasher \
+git clone https://github.com/NextThingCo/CHIP-flasher \
 	/etc/skel/Desktop/CHIP-flasher
 
 git clone --branch=chip/next https://github.com/NextThingCo/CHIP-tools \
