@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 PIP=`which pip`
 ${PIP} install --upgrade Cython==0.21 || error "could not install cython!"
 ${PIP} install kivy || error "could not install kivy"
