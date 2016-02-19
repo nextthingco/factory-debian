@@ -4,7 +4,7 @@
 		<item label="Run Flasher">
 			<action name="Execute">
 				<command>
-					~/Desktop/CHIP-flasher/startFlash.sh
+					~/Desktop/CHIP-flasher/startFlasher.sh
 				</command>
 			</action>
 		</item>
