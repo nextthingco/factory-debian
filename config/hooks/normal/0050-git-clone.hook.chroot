@@ -82,7 +82,7 @@ cp -r /etc/skel/Desktop/CHIP-flasher/tools /etc/skel/Desktop/CHIP-flasher/flashe
 
 mkdir -p /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware
 
-wget -O /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip http://opensource.nextthing.co/images.zip
+wget -O /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip http://opensource.nextthing.co/images-production-1.1-test.zip
 unzip /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip -d /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/
 rm /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip
 
