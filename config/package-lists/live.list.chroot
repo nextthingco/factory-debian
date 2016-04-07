@@ -41,5 +41,6 @@ libsdl2-mixer-dev
 libsdl2-ttf-dev
 gir1.2-gstreamer-1.0
 sqlitebrowser
+libgstreamer1.0-dev
 
 dialog
