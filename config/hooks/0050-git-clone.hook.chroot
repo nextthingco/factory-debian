@@ -12,6 +12,7 @@ ${PIP} install kivy || error "could not install kivy"
 sudo ln -s /usr/bin/python2.7 /usr/local/bin/kivy
 ${PIP} install libusb1 || error "could not install libusb1"
 ${PIP} install pexpect || error "could not install pexpect"
+${PIP} install pycount || error "could not install pycount"
 ${PIP} install pyserial || error "could not install pyserial"
 
 mkdir -p /etc/skel/Desktop
