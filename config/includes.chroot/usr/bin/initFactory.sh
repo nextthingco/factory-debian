@@ -19,7 +19,7 @@ if [[ "${SELECTION}" == "1" ]]
 then
         echo "/home/debian/Desktop/CHIP-flasher/startFlasher.sh &" > /home/debian/.config/openbox/autostart
         echo -e "\nxset -dpms & \nxset s noblank &" >> /home/debian/.config/openbox/autostart
-        /home/debian/Desktop/CHIP-flasher/startFlash.sh &
+        /home/debian/Desktop/CHIP-flasher/startFlasher.sh &
 else
         echo "~/Desktop/CHIP-flasher/startHardwareTest.sh &" > /home/debian/.config/openbox/autostart
         echo -e "\nxset -dpms & \nxset s noblank &" >> /home/debian/.config/openbox/autostart
