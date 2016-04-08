@@ -1,6 +1,7 @@
 xorg
 openbox
 lightdm
+firmware-linux
 
 live-boot
 live-config
