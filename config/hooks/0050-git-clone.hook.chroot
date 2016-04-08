@@ -2,6 +2,13 @@
 
 set -x
 
+echo "" > /etc/apt/sources.list
+echo "deb http://ftp.us.debian.org/debian jessie main contrib non-free" > /etc/apt/sources.list
+echo "" > /etc/apt/sources.list
+echo "deb http://ftp.debian.org/debian jessie-backports main" > /etc/apt/sources.list
+
+apt-get update && apt-get install -t jessie-backports xserver-xorg-video-intel
+
 wget http://ftp.us.debian.org/debian/pool/main/f/fonts-android/fonts-droid_4.4.4r2-6_all.deb
 dpkg -i fonts*.deb
 rm fonts*.deb

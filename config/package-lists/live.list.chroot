@@ -4,7 +4,6 @@ lightdm
 firmware-linux
 firmware-realtek
 firmware-iwlwifi
-xserver-xorg-video-intel=2:2.99.917-2~bpo8+1
 
 live-boot
 live-config
