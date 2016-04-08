@@ -20,7 +20,7 @@ mkdir -p /etc/skel/Desktop
 git clone --branch=production https://github.com/NextThingCo/CHIP-flasher \
 	/etc/skel/Desktop/CHIP-flasher
 
-git clone --branch=chip/next https://github.com/NextThingCo/CHIP-tools \
+git clone --branch=by/local-flash https://github.com/NextThingCo/CHIP-tools \
 	/etc/skel/Desktop/CHIP-flasher/tools
 
 cp -r /etc/skel/Desktop/CHIP-flasher/tools /etc/skel/Desktop/CHIP-flasher/flasher
