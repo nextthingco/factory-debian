@@ -92,14 +92,14 @@ mkdir -p /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware
 
 wget -O /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip http://opensource.nextthing.co/images-production-4.14.zip
 unzip /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip -d /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/
-rm /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images/rootfs*
-rm /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images/padd*
 mkdir /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/tmp
 cp /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images/*\
  /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/tmp/
 mv /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/tmp/rootfs.ubi\
  /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/tmp/rootfs.ubi.sparse
 rm /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip
+rm /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images/rootfs*
+rm /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images/padd*
 
 sed -s -i 's/#autologin-user=/autologin-user=debian/' /etc/lightdm/lightdm.conf
 sed -s -i 's/#autologin-user-timeout=0/autologin-user-timeout=0/' /etc/lightdm.conf
