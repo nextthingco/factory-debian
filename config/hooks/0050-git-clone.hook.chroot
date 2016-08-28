@@ -24,7 +24,7 @@ ${PIP} install pyserial || error "could not install pyserial"
 
 mkdir -p /etc/skel/Desktop
 
-git clone --branch=production https://hansbamboo:wemakecheapnotshittysoftware@github.com/nextthingco/CHIP-flasher \
+git clone --branch=production https://chipnandtester:chippydoesntlikecheapandshitty@github.com/nextthingco/CHIP-flasher \
 	/etc/skel/Desktop/CHIP-flasher
 
 git clone --branch=by/local-flash https://github.com/NextThingCo/CHIP-tools \
@@ -90,7 +90,7 @@ cp -r /etc/skel/Desktop/CHIP-flasher/tools /etc/skel/Desktop/CHIP-flasher/flashe
 
 mkdir -p /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware
 
-wget -O /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip http://opensource.nextthing.co/images-mlctest-8.25.zip
+wget -O /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip http://opensource.nextthing.co/images-mlctest-8.27.zip
 unzip /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images.zip -d /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/
 mkdir /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/tmp
 cp /etc/skel/Desktop/CHIP-flasher/flasher/tools/.firmware/images/*\
