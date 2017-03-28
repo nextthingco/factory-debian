@@ -28,6 +28,6 @@ libfreetype6-dev
 libpng-dev
 python-kivy
 usbutils
-libgl1-mesa-swx
+libgl1-mesa-swx11
 
 dialog
