@@ -21,6 +21,7 @@ build:
     - md5sum live-image-i386.hybrid.iso > factory.md5
     - mv live-image-i386.hybrid.iso factory.iso
     - echo "UPLOAD!!!"
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
     - docker pull $UPLOAD_CONTAINER
     - docker run
       -e GHVAR_AWS_ID=${GHVAR_AWS_ID}
