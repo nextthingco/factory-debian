@@ -19,12 +19,6 @@ ${PIP} install pyudev || error "could not install pyudev"
 ${PIP} install pyusb || error "could not install pyusb"
 ${PIP} install PyDispatcher || error "could not install PyDispatcher"
 
-git clone https://github.com/NextThingCo/sunxi-tools \
-	/etc/skel/Desktop/CHIP-flasher/sunxi-tools
-
-make -C /etc/skel/Desktop/CHIP-flasher/sunxi-tools/
-ln -s /etc/skel/Desktop/CHIP-flasher/sunxi-tools/fel /usr/local/bin/fel
-
 sed -s -i 's/#autologin-user=/autologin-user=debian/' /etc/lightdm/lightdm.conf
 sed -s -i 's/#autologin-user-timeout=0/autologin-user-timeout=0/' /etc/lightdm.conf
 

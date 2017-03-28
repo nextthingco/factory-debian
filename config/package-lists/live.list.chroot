@@ -13,19 +13,7 @@ gksu
 sudo
 network-manager
 git
-usbutils
 curl
-build-essential
-mercurial
-cmake
-unzip
-device-tree-compiler
-libncurses-dev
-cu
-u-boot-tools
-android-tools-fastboot
-android-tools-fsutils
-
 
 python-dev
 python-pip
@@ -33,15 +21,6 @@ libusb-1.0-0-dev
 pkg-config
 libgl1-mesa-dev
 python-setuptools
-python-pygame
-python-opengl
-python-gst-1.0
-python-enchant
-libgles2-mesa-dev
-libsdl2-dev
-libsdl2-image-dev
-libsdl2-mixer-dev
-libsdl2-ttf-dev
 gir1.2-gstreamer-1.0
 sqlitebrowser
 libgstreamer1.0-dev
