@@ -19,7 +19,7 @@ build:
     - docker run --privileged -v $PWD:/opt/factory -w /opt/factory --rm computermouth/sudeb /bin/bash -c "sudo apt-get update -qq && sudo apt-get install -y live-build && sudo lb build"
     - ls -lsah
     - md5sum live-image-i386.hybrid.iso > factory.md5
-    - mv live-image-i386.hybrid.iso > factory.iso
+    - mv live-image-i386.hybrid.iso factory.iso
     - echo "UPLOAD!!!"
     - docker pull $UPLOAD_CONTAINER
     - docker run
