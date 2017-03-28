@@ -9,15 +9,14 @@ stages:
 
 variables:
   UPLOAD_CONTAINER: $CI_REGISTRY/nextthingco/ci-tools:stable
-  ARTIFACT_0: /opt/factory/factory.md5
-  ARTIFACT_1: /opt/factory/factory.iso
+  ARTIFACT_0: /upload/factory.md5
+  ARTIFACT_1: /upload/factory.iso
 
 build:
   stage: build
   script:
     - docker pull computermouth/sudeb
     - docker run --privileged -v $PWD:/opt/factory -w /opt/factory --rm computermouth/sudeb /bin/bash -c "sudo apt-get update -qq && sudo apt-get install -y live-build && sudo lb build"
-    - cd /opt/factory
     - ls -lsah
     - md5sum live-image-i386.hybrid.iso > factory.md5
     - mv live-image-i386.hybrid.iso > factory.iso
