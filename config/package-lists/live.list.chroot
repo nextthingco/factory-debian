@@ -26,5 +26,8 @@ sqlitebrowser
 libgstreamer1.0-dev
 libfreetype6-dev
 libpng-dev
+python-kivy
+usbutils
+libgl1-mesa-swx
 
 dialog

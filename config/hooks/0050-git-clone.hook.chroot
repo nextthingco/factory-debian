@@ -5,7 +5,7 @@ set -x
 echo "" > /etc/apt/sources.list
 echo "deb http://ftp.us.debian.org/debian jessie main contrib non-free" > /etc/apt/sources.list
 echo "" > /etc/apt/sources.list
-#echo "deb http://ftp.debian.org/debian jessie-backports main" > /etc/apt/sources.list
+echo "deb http://ftp.debian.org/debian jessie-backports main" > /etc/apt/sources.list
 
 apt-get update && apt-get install -t jessie-backports xserver-xorg-video-intel
 
@@ -21,5 +21,8 @@ ${PIP} install PyDispatcher || error "could not install PyDispatcher"
 
 sed -s -i 's/#autologin-user=/autologin-user=debian/' /etc/lightdm/lightdm.conf
 sed -s -i 's/#autologin-user-timeout=0/autologin-user-timeout=0/' /etc/lightdm.conf
+
+dpkg -i /usr/share/factory-deb/*.deb
+apt-get -f install -y
 
 exit 0

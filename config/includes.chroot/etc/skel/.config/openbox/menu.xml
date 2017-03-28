@@ -4,14 +4,7 @@
 		<item label="Run Flasher">
 			<action name="Execute">
 				<command>
-					~/Desktop/CHIP-flasher/startFlasher.sh
-				</command>
-			</action>
-		</item>
-		<item label="Run Hardware Test">
-			<action name="Execute">
-				<command>
-					~/Desktop/CHIP-flasher/startHardwareTest.sh
+					x-terminal-emulator -e flashApp.py
 				</command>
 			</action>
 		</item>
